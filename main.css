@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: rgba(1, 13, 16, 0.788);
+}
+.movie {
+  position: relative;
+  width: 20rem;
+  height: 25rem;
+  margin: 20px;
+  cursor: pointer;
+  border-radius: 20px;
+  transition: all 0.3s linear;
+}
+.movie img {
+  width: 17rem;
+  height: 25rem;
+  border-radius: 20px;
+}
+.movie:hover {
+  transform: scale(1.1);
+}
+
+.movie-info {
+  background-color: rgba(0, 0, 0, 0.76);
+  position: absolute;
+  overflow: hidden;
+  color: white;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 17rem;
+  height: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 15px;
+  /* visibility: hidden; */
+  transition: all 0.4s linear;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.movie:hover .movie-info {
+  height: 40%;
+}
+.movie-info p.red {
+  color: rgb(241, 96, 96);
+  border: 1px solid rgb(241, 96, 96);
+}
+.movie-info p.orange {
+  color: rgb(247, 200, 112);
+  border: 1px solid rgb(247, 200, 112);
+}
+.movie-info p.green {
+  color: rgb(84, 226, 84);
+  border: 1px solid rgb(84, 226, 84);
+}
+.movie-info h3 {
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  padding: 15px;
+  width: 80%;
+  text-align: center;
+  position: relative;
+}
+.movie-info h3::after,
+.Year::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  top: 90%;
+  width: 100%;
+  margin-top: 6px;
+  background-color: white;
+  text-align: center;
+}
+.movie-info p {
+  margin-top: 7px;
+}
+.vote {
+  background-color: rgb(12, 11, 11);
+  padding: 2px;
+}
+.Year {
+  font-size: 18px;
+  position: relative;
+  width: 40%;
+  text-align: center;
+  padding: 6px;
+  margin: 10px;
+}
+
+header {
+  padding: 1rem;
+  display: flex;
+  justify-content: flex-end;
+  background-color: rgba(1, 13, 16, 0.788);
+}
+
+#search {
+  padding: 0.8rem;
+  border: none;
+  outline: 1px solid rgba(1, 13, 16, 0.788);
+  background-color: transparent;
+  color: white;
+}
+
+#searchBtn {
+  padding: 0.8rem;
+  border: none;
+  background-color: rgba(1, 13, 16, 0.788);
+  color: white;
+  cursor: pointer;
+}
